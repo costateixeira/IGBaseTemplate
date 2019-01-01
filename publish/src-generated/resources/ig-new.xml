@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="base"/>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="C:\HL7\baseIGTemplate\publish\src-generated\resources"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="C:\HL7\baseIGTemplate\publish\src\resources"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="C:\HL7\baseIGTemplate\publish\src\vocabulary"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource">
+    <valueString value="C:\HL7\baseIGTemplate\publish\src\examples"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="C:\HL7\baseIGTemplate\publish\src\images"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages">
+    <valueString value="C:\HL7\baseIGTemplate\publish\src-generated\pages"/>
+  </extension>
+  <url value="http://ihe.net/fhir/base"/>
+  <version value="0.2.0"/>
+  <name value="Base Profile"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2018-01-01T00:00:00.000+02:00"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="ihe.fhir.us.base"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.0"/>
+  <definition>
+    <resource>
+      <reference>
+        <reference value="CapabilityStatement/ihe-base-requestplacer"/>
+      </reference>
+      <name value="ihe-base-requestplacer"/>
+      <description value="Request Placer Specifications"/>
+    </resource>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Main Page"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="artifacts.html"/>
+        <title value="Arifacts"/>
+        <generation value="html"/>
+        <page>
+          <nameUrl value="ihe-base-requestplacer.html"/>
+          <title value="ihe-base-requestplacer"/>
+          <generation value="generated"/>
+        </page>
+      </page>
+    </page>
+    <parameter>
+      <code value="apply"/>
+      <value value="version"/>
+    </parameter>
+    <parameter>
+      <code value="html-template"/>
+      <value value="template-page.html"/>
+    </parameter>
+    <parameter>
+      <code value="generate-json"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="generate-xml"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="generate-turtle"/>
+      <value value="true"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

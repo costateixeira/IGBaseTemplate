@@ -1,0 +1,93 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "base",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\HL7\\baseIGTemplate\\publish\\src-generated\\resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\HL7\\baseIGTemplate\\publish\\src\\resources"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\HL7\\baseIGTemplate\\publish\\src\\vocabulary"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-resource",
+    "valueString" : "C:\\HL7\\baseIGTemplate\\publish\\src\\examples"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\HL7\\baseIGTemplate\\publish\\src\\images"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/igpublisher-folder-pages",
+    "valueString" : "C:\\HL7\\baseIGTemplate\\publish\\src-generated\\pages"
+  }],
+  "url" : "http://ihe.net/fhir/base",
+  "version" : "0.2.0",
+  "name" : "Base Profile",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2018-01-01T00:00:00.000+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US"
+    }]
+  }],
+  "packageId" : "ihe.fhir.us.base",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["4.0.0",
+  "4.0.0"],
+  "definition" : {
+    "resource" : [{
+      "reference" : {
+        "reference" : "CapabilityStatement/ihe-base-requestplacer"
+      },
+      "name" : "ihe-base-requestplacer",
+      "description" : "Request Placer Specifications"
+    }],
+    "page" : {
+      "nameUrl" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "nameUrl" : "index.html",
+        "title" : "Main Page",
+        "generation" : "html"
+      },
+      {
+        "nameUrl" : "artifacts.html",
+        "title" : "Arifacts",
+        "generation" : "html",
+        "page" : [{
+          "nameUrl" : "ihe-base-requestplacer.html",
+          "title" : "ihe-base-requestplacer",
+          "generation" : "generated"
+        }]
+      }]
+    },
+    "parameter" : [{
+      "code" : "apply",
+      "value" : "version"
+    },
+    {
+      "code" : "html-template",
+      "value" : "template-page.html"
+    },
+    {
+      "code" : "generate-json",
+      "value" : "true"
+    },
+    {
+      "code" : "generate-xml",
+      "value" : "true"
+    },
+    {
+      "code" : "generate-turtle",
+      "value" : "true"
+    }]
+  }
+}
